@@ -1,0 +1,858 @@
+{
+  "calls": [
+    {
+      "gate": "plan",
+      "artifact": "docs/gateflow/agent-sandbox-workspace-routing/plan.md",
+      "runtime": "codex",
+      "provider": "gpt-6-sol",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "needs_review",
+      "wall_clock_seconds": 531.662869,
+      "usage": {
+        "input_tokens": 3282286,
+        "cached_input_tokens": 3116160,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 22243,
+        "reasoning_output_tokens": 8144
+      },
+      "runtime_metrics": {},
+      "session_id": "01a127c9-77d4-7201-88d3-1964c6363e97",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-gateflow-vVRPod/plan.jsonl",
+        "stderr": "/private/tmp/workspace-routing-gateflow-vVRPod/plan.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 1,
+        "warnings": 0
+      }
+    },
+    {
+      "gate": "plan-review",
+      "artifact": "docs/reviews/plan-review-20261011-055759.md",
+      "runtime": "claude",
+      "provider": "ds-flash",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "passed",
+      "wall_clock_seconds": 446.055892,
+      "usage": {
+        "input_tokens": 114798,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 3651712,
+        "output_tokens": 81002,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "",
+        "iterations": [],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "runtime_metrics": {
+        "duration_ms": 443606,
+        "duration_api_ms": 414255,
+        "total_cost_usd": 4.4248959999999995,
+        "modelUsage": {
+          "deepseek/deepseek-flash[1m]": {
+            "inputTokens": 114798,
+            "outputTokens": 81002,
+            "cacheReadInputTokens": 3651712,
+            "cacheCreationInputTokens": 0,
+            "webSearchRequests": 0,
+            "costUSD": 4.4248959999999995,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 32000,
+            "thinkingTokens": 0,
+            "canonicalModel": "deepseek/deepseek-flash[1m]",
+            "provider": "firstParty",
+            "costBasis": "unknown"
+          }
+        }
+      },
+      "session_id": "bf223aaf-5d16-4154-8056-b4e011f25050",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-gateflow-vVRPod/plan-review-ds-flash.jsonl",
+        "stderr": "/private/tmp/workspace-routing-gateflow-vVRPod/plan-review-ds-flash.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 0,
+        "warnings": 1
+      }
+    },
+    {
+      "gate": "plan-review",
+      "artifact": "docs/reviews/plan-review-20261011-055758.md",
+      "runtime": "codex",
+      "provider": "mimo",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "needs_review",
+      "wall_clock_seconds": 1129.545107,
+      "usage": {
+        "input_tokens": 7292194,
+        "cached_input_tokens": 7107200,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 34178,
+        "reasoning_output_tokens": 20643
+      },
+      "runtime_metrics": {},
+      "session_id": "01a127d2-c9b4-7c51-a420-eb5e62be1d6a",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-gateflow-vVRPod/plan-review-mimo.jsonl",
+        "stderr": "/private/tmp/workspace-routing-gateflow-vVRPod/plan-review-mimo.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 3,
+        "warnings": 0
+      }
+    },
+    {
+      "gate": "plan-fix",
+      "artifact": "docs/gateflow/agent-sandbox-workspace-routing/plan-fix-01.md",
+      "runtime": "codex",
+      "provider": "gpt-6-sol",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "passed",
+      "wall_clock_seconds": 301.315055,
+      "usage": {
+        "input_tokens": 449428,
+        "cached_input_tokens": 391040,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15231,
+        "reasoning_output_tokens": 3870
+      },
+      "runtime_metrics": {},
+      "session_id": "01a127e5-ba5f-7a82-9910-7673476d61a1",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-gateflow-vVRPod/plan-fix-01.jsonl",
+        "stderr": "/private/tmp/workspace-routing-gateflow-vVRPod/plan-fix-01.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "gate": "plan-rereview",
+      "artifact": "docs/reviews/plan-review-20261011-062441.md",
+      "runtime": "claude",
+      "provider": "ds-flash",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "needs_review",
+      "wall_clock_seconds": 341.392705,
+      "usage": {
+        "input_tokens": 127276,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 3423104,
+        "output_tokens": 63537,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "",
+        "iterations": [],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "runtime_metrics": {
+        "duration_ms": 338919,
+        "duration_api_ms": 322446,
+        "total_cost_usd": 3.9363570000000005,
+        "modelUsage": {
+          "deepseek/deepseek-flash[1m]": {
+            "inputTokens": 127276,
+            "outputTokens": 63537,
+            "cacheReadInputTokens": 3423104,
+            "cacheCreationInputTokens": 0,
+            "webSearchRequests": 0,
+            "costUSD": 3.9363570000000005,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 32000,
+            "thinkingTokens": 0,
+            "canonicalModel": "deepseek/deepseek-flash[1m]",
+            "provider": "firstParty",
+            "costBasis": "unknown"
+          }
+        }
+      },
+      "session_id": "a01da05a-d454-42eb-93e6-8a47fa757820",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-gateflow-vVRPod/plan-rereview-ds-flash.jsonl",
+        "stderr": "/private/tmp/workspace-routing-gateflow-vVRPod/plan-rereview-ds-flash.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 1,
+        "warnings": 1
+      }
+    },
+    {
+      "gate": "plan re-review",
+      "artifact": "docs/reviews/plan-review-20261011-062440.md",
+      "runtime": "codex",
+      "provider": "mimo",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "passed",
+      "wall_clock_seconds": 1647.871905,
+      "usage": {
+        "input_tokens": 6000795,
+        "cached_input_tokens": 5652480,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 34661,
+        "reasoning_output_tokens": 22963
+      },
+      "runtime_metrics": {},
+      "session_id": "01a127eb-4057-71c1-9e31-26613b488245",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-gateflow-vVRPod/plan-rereview-mimo.jsonl",
+        "stderr": "/private/tmp/workspace-routing-gateflow-vVRPod/plan-rereview-mimo.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "gate": "S1 implementation",
+      "artifact": "docs/gateflow/agent-sandbox-workspace-routing/implementation.md",
+      "runtime": "codex",
+      "provider": "gpt-6-sol",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "needs_review",
+      "wall_clock_seconds": 705.888581,
+      "usage": {
+        "input_tokens": 2618822,
+        "cached_input_tokens": 2498432,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 33283,
+        "reasoning_output_tokens": 10712
+      },
+      "runtime_metrics": {},
+      "session_id": "01a12805-23d9-72b0-a43c-3c5fa643407f",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-gateflow-vVRPod/implementation.jsonl",
+        "stderr": "/private/tmp/workspace-routing-gateflow-vVRPod/implementation.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 4,
+        "warnings": 0
+      }
+    },
+    {
+      "gate": "S1 code review",
+      "artifact": "docs/reviews/code-review-20261011-070513.md",
+      "runtime": "claude",
+      "provider": "ds-flash",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "needs_review",
+      "wall_clock_seconds": 739.853381,
+      "usage": {
+        "input_tokens": 121009,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 4207744,
+        "output_tokens": 79792,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "",
+        "iterations": [],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "runtime_metrics": {
+        "duration_ms": 737369,
+        "duration_api_ms": 716765,
+        "total_cost_usd": 4.614572000000001,
+        "modelUsage": {
+          "deepseek/deepseek-flash[1m]": {
+            "inputTokens": 118860,
+            "outputTokens": 79792,
+            "cacheReadInputTokens": 4050944,
+            "cacheCreationInputTokens": 0,
+            "webSearchRequests": 0,
+            "costUSD": 4.614572000000001,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 32000,
+            "thinkingTokens": 0,
+            "canonicalModel": "deepseek/deepseek-flash[1m]",
+            "provider": "firstParty",
+            "costBasis": "unknown"
+          }
+        }
+      },
+      "session_id": "411e65c3-b657-4ea5-a7b0-5c6ea12ae01b",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-gateflow-vVRPod/code-review-ds-flash.jsonl",
+        "stderr": "/private/tmp/workspace-routing-gateflow-vVRPod/code-review-ds-flash.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 3,
+        "warnings": 1
+      }
+    },
+    {
+      "gate": "S1 code review",
+      "artifact": "docs/reviews/code-review-20261011-070512.md",
+      "runtime": "codex",
+      "provider": "mimo",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "passed",
+      "wall_clock_seconds": 966.440369,
+      "usage": {
+        "input_tokens": 3238068,
+        "cached_input_tokens": 2967424,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 29535,
+        "reasoning_output_tokens": 22130
+      },
+      "runtime_metrics": {},
+      "session_id": "01a12810-85e0-79f1-982f-5b14b1f1bbcd",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-gateflow-vVRPod/code-review-mimo.jsonl",
+        "stderr": "/private/tmp/workspace-routing-gateflow-vVRPod/code-review-mimo.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "gate": "S1 code fix",
+      "artifact": "docs/gateflow/agent-sandbox-workspace-routing/code-fix-01.md",
+      "runtime": "codex",
+      "provider": "gpt-6-sol",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "passed",
+      "wall_clock_seconds": 132.851569,
+      "usage": {
+        "input_tokens": 419891,
+        "cached_input_tokens": 360832,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5701,
+        "reasoning_output_tokens": 2638
+      },
+      "runtime_metrics": {},
+      "session_id": "01a1281f-b45a-7f63-9547-2afb11465c38",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-gateflow-vVRPod/code-fix-01.jsonl",
+        "stderr": "/private/tmp/workspace-routing-gateflow-vVRPod/code-fix-01.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "gate": "S1 live synthetic validation",
+      "artifact": "docs/gateflow/agent-sandbox-workspace-routing/validation.md",
+      "runtime": "codex",
+      "provider": "gpt-6-sol",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "needs_review",
+      "wall_clock_seconds": 6.56447,
+      "usage": {
+        "input_tokens": 10685,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5,
+        "reasoning_output_tokens": 0
+      },
+      "runtime_metrics": {},
+      "session_id": "01a12822-7eca-7a91-ab4e-ad110f5d1dbf",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-live-ybp8wpbe/logs/events.jsonl",
+        "stderr": "/private/tmp/workspace-routing-live-ybp8wpbe/logs/runtime.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 1,
+        "warnings": 0
+      }
+    },
+    {
+      "gate": "S1 code re-review",
+      "artifact": "docs/reviews/code-review-20261011-072620.md",
+      "runtime": "claude",
+      "provider": "ds-flash",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "needs_review",
+      "wall_clock_seconds": 353.393997,
+      "usage": {
+        "input_tokens": 119195,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 3237760,
+        "output_tokens": 61976,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "",
+        "iterations": [],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "runtime_metrics": {
+        "duration_ms": 350856,
+        "duration_api_ms": 331467,
+        "total_cost_usd": 3.764255,
+        "modelUsage": {
+          "deepseek/deepseek-flash[1m]": {
+            "inputTokens": 119195,
+            "outputTokens": 61976,
+            "cacheReadInputTokens": 3237760,
+            "cacheCreationInputTokens": 0,
+            "webSearchRequests": 0,
+            "costUSD": 3.764255,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 32000,
+            "thinkingTokens": 0,
+            "canonicalModel": "deepseek/deepseek-flash[1m]",
+            "provider": "firstParty",
+            "costBasis": "unknown"
+          }
+        }
+      },
+      "session_id": "824e911a-16e5-429f-aa8c-97a1967163cc",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-gateflow-vVRPod/code-rereview-ds-flash.jsonl",
+        "stderr": "/private/tmp/workspace-routing-gateflow-vVRPod/code-rereview-ds-flash.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 1,
+        "warnings": 1
+      }
+    },
+    {
+      "gate": "S1 code re-review",
+      "artifact": "docs/reviews/code-review-20261011-072619.md",
+      "runtime": "codex",
+      "provider": "mimo",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "needs_review",
+      "wall_clock_seconds": 789.658007,
+      "usage": {
+        "input_tokens": 4519621,
+        "cached_input_tokens": 4353920,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 22405,
+        "reasoning_output_tokens": 14212
+      },
+      "runtime_metrics": {},
+      "session_id": "01a12823-ed02-7d83-a078-2ce6c5dc29c4",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-gateflow-vVRPod/code-rereview-mimo.jsonl",
+        "stderr": "/private/tmp/workspace-routing-gateflow-vVRPod/code-rereview-mimo.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 2,
+        "warnings": 0
+      }
+    },
+    {
+      "gate": "aggregate deepreview",
+      "artifact": "docs/reviews/code-review-20261011-074040.md",
+      "runtime": "claude",
+      "provider": "ds-flash",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "passed",
+      "wall_clock_seconds": 369.912589,
+      "usage": {
+        "input_tokens": 127274,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 3257856,
+        "output_tokens": 65241,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "",
+        "iterations": [],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "runtime_metrics": {
+        "duration_ms": 367376,
+        "duration_api_ms": 344552,
+        "total_cost_usd": 3.8963229999999998,
+        "modelUsage": {
+          "deepseek/deepseek-flash[1m]": {
+            "inputTokens": 127274,
+            "outputTokens": 65241,
+            "cacheReadInputTokens": 3257856,
+            "cacheCreationInputTokens": 0,
+            "webSearchRequests": 0,
+            "costUSD": 3.8963229999999998,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 32000,
+            "thinkingTokens": 0,
+            "canonicalModel": "deepseek/deepseek-flash[1m]",
+            "provider": "firstParty",
+            "costBasis": "unknown"
+          }
+        }
+      },
+      "session_id": "beb0eb60-1d16-40f4-94c4-300fc77ce39b",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-gateflow-vVRPod/aggregate-review-ds-flash.jsonl",
+        "stderr": "/private/tmp/workspace-routing-gateflow-vVRPod/aggregate-review-ds-flash.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 0,
+        "warnings": 1
+      }
+    },
+    {
+      "gate": "aggregate deepreview",
+      "artifact": "docs/reviews/code-review-20261011-074039.md",
+      "runtime": "codex",
+      "provider": "mimo",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "passed",
+      "wall_clock_seconds": 1919.526718,
+      "usage": {
+        "input_tokens": 17202635,
+        "cached_input_tokens": 16997248,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 45161,
+        "reasoning_output_tokens": 34474
+      },
+      "runtime_metrics": {},
+      "session_id": "01a12830-eb32-7210-824b-5e2ae65e69d9",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-gateflow-vVRPod/aggregate-review-mimo.jsonl",
+        "stderr": "/private/tmp/workspace-routing-gateflow-vVRPod/aggregate-review-mimo.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "gate": "aggregate fix",
+      "artifact": "docs/gateflow/agent-sandbox-workspace-routing/aggregate-fix-01.md",
+      "runtime": "codex",
+      "provider": "gpt-6-sol",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "needs_review",
+      "wall_clock_seconds": 407.640605,
+      "usage": {
+        "input_tokens": 1269611,
+        "cached_input_tokens": 1181184,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14548,
+        "reasoning_output_tokens": 5994
+      },
+      "runtime_metrics": {},
+      "session_id": "01a1284f-0bbf-7d12-9364-61eee24bf6df",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-gateflow-vVRPod/aggregate-fix-01.jsonl",
+        "stderr": "/private/tmp/workspace-routing-gateflow-vVRPod/aggregate-fix-01.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 2,
+        "warnings": 0
+      }
+    },
+    {
+      "gate": "aggregate current-source live validation",
+      "artifact": "docs/gateflow/agent-sandbox-workspace-routing/validation.md",
+      "runtime": "codex",
+      "provider": "gpt-6-sol",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "needs_review",
+      "wall_clock_seconds": 5.727766,
+      "usage": {
+        "input_tokens": 10689,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5,
+        "reasoning_output_tokens": 0
+      },
+      "runtime_metrics": {},
+      "session_id": "01a12856-511b-79a0-b420-114a12389993",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-live-final-_b0syo6q/logs/events.jsonl",
+        "stderr": "/private/tmp/workspace-routing-live-final-_b0syo6q/logs/runtime.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 1,
+        "warnings": 0
+      }
+    },
+    {
+      "gate": "aggregate re-review",
+      "artifact": "docs/reviews/code-review-20261011-082244.md",
+      "runtime": "claude",
+      "provider": "ds-flash",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "needs_review",
+      "wall_clock_seconds": 386.704946,
+      "usage": {
+        "input_tokens": 109649,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 4193920,
+        "output_tokens": 70163,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "",
+        "iterations": [],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "runtime_metrics": {
+        "duration_ms": 384256,
+        "duration_api_ms": 355534,
+        "total_cost_usd": 4.39928,
+        "modelUsage": {
+          "deepseek/deepseek-flash[1m]": {
+            "inputTokens": 109649,
+            "outputTokens": 70163,
+            "cacheReadInputTokens": 4193920,
+            "cacheCreationInputTokens": 0,
+            "webSearchRequests": 0,
+            "costUSD": 4.39928,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 32000,
+            "thinkingTokens": 0,
+            "canonicalModel": "deepseek/deepseek-flash[1m]",
+            "provider": "firstParty",
+            "costBasis": "unknown"
+          }
+        }
+      },
+      "session_id": "7f53ab3a-840c-4a19-811e-29a9bf30e58b",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-gateflow-vVRPod/aggregate-rereview-ds-flash.jsonl",
+        "stderr": "/private/tmp/workspace-routing-gateflow-vVRPod/aggregate-rereview-ds-flash.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 1,
+        "warnings": 1
+      }
+    },
+    {
+      "gate": "aggregate re-review",
+      "artifact": "docs/reviews/code-review-20261011-082243.md",
+      "runtime": "codex",
+      "provider": "mimo",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "needs_review",
+      "wall_clock_seconds": 1473.472979,
+      "usage": {
+        "input_tokens": 15254398,
+        "cached_input_tokens": 15065728,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 30630,
+        "reasoning_output_tokens": 19042
+      },
+      "runtime_metrics": {},
+      "session_id": "01a12857-5956-75b1-bde9-37ff5259274c",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-gateflow-vVRPod/aggregate-rereview-mimo.jsonl",
+        "stderr": "/private/tmp/workspace-routing-gateflow-vVRPod/aggregate-rereview-mimo.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 1,
+        "warnings": 0
+      }
+    },
+    {
+      "gate": "PR review",
+      "artifact": "docs/reviews/pr-53-review-20261011-084859.md",
+      "runtime": "claude",
+      "provider": "ds-flash",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "needs_review",
+      "wall_clock_seconds": 478.8396,
+      "usage": {
+        "input_tokens": 121739,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 4224256,
+        "output_tokens": 66500,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "",
+        "iterations": [],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "runtime_metrics": {
+        "duration_ms": 476323,
+        "duration_api_ms": 362562,
+        "total_cost_usd": 4.383323000000001,
+        "modelUsage": {
+          "deepseek/deepseek-flash[1m]": {
+            "inputTokens": 121739,
+            "outputTokens": 66500,
+            "cacheReadInputTokens": 4224256,
+            "cacheCreationInputTokens": 0,
+            "webSearchRequests": 0,
+            "costUSD": 4.383323000000001,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 32000,
+            "thinkingTokens": 0,
+            "canonicalModel": "deepseek/deepseek-flash[1m]",
+            "provider": "firstParty",
+            "costBasis": "unknown"
+          }
+        }
+      },
+      "session_id": "0cd4e0be-9ed1-4a14-923b-acb9a06328ed",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-gateflow-vVRPod/pr-review-ds-flash.jsonl",
+        "stderr": "/private/tmp/workspace-routing-gateflow-vVRPod/pr-review-ds-flash.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 2,
+        "warnings": 1
+      }
+    },
+    {
+      "gate": "PR review",
+      "artifact": "docs/reviews/pr-53-review-20261011-084858.md",
+      "runtime": "codex",
+      "provider": "mimo",
+      "runtime_exit_code": 0,
+      "runner_exit_code": 0,
+      "validation_status": "needs_review",
+      "wall_clock_seconds": 1246.604279,
+      "usage": {
+        "input_tokens": 4941393,
+        "cached_input_tokens": 4730240,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 39551,
+        "reasoning_output_tokens": 25100
+      },
+      "runtime_metrics": {},
+      "session_id": "01a1286f-7e61-76b2-9c80-cb8b3fc0ab66",
+      "logs": {
+        "output": "/private/tmp/workspace-routing-gateflow-vVRPod/pr-review-mimo.jsonl",
+        "stderr": "/private/tmp/workspace-routing-gateflow-vVRPod/pr-review-mimo.stderr",
+        "last_message": null
+      },
+      "diagnostic_counts": {
+        "errors": 0,
+        "anomalies": 1,
+        "warnings": 0
+      }
+    }
+  ]
+}
