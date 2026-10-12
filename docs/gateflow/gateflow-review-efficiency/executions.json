@@ -1,0 +1,86 @@
+{
+  "tasks": [
+    {
+      "task": "plan",
+      "raw_record": "plan-execution.json",
+      "summary_path": [
+        "summary"
+      ]
+    },
+    {
+      "task": "plan-review-mimo-flash",
+      "raw_record": "plan-review-executions.json",
+      "summary_path": [
+        "mimo-flash",
+        "summary"
+      ]
+    },
+    {
+      "task": "plan-review-ds-flash",
+      "raw_record": "plan-review-executions.json",
+      "summary_path": [
+        "ds-flash",
+        "summary"
+      ]
+    },
+    {
+      "task": "implementation",
+      "raw_record": "implementation-execution.json",
+      "summary_path": [
+        "summary"
+      ]
+    },
+    {
+      "task": "code-review-mimo-flash",
+      "raw_record": "code-review-executions.json",
+      "summary_path": [
+        "mimo-flash",
+        "summary"
+      ]
+    },
+    {
+      "task": "code-review-ds-flash",
+      "raw_record": "code-review-executions.json",
+      "summary_path": [
+        "ds-flash",
+        "summary"
+      ]
+    },
+    {
+      "task": "aggregate-mimo-flash",
+      "raw_record": "aggregate-executions.json",
+      "summary_path": [
+        "mimo-flash",
+        "summary"
+      ]
+    },
+    {
+      "task": "aggregate-ds-flash",
+      "raw_record": "aggregate-executions.json",
+      "summary_path": [
+        "ds-flash",
+        "summary"
+      ]
+    },
+    {
+      "task": "pr-review-mimo-flash",
+      "raw_record": "pr-review-executions.json",
+      "summary_path": [
+        "mimo-flash",
+        "summary"
+      ]
+    },
+    {
+      "task": "pr-review-ds-flash",
+      "raw_record": "pr-review-executions.json",
+      "summary_path": [
+        "ds-flash",
+        "summary"
+      ]
+    }
+  ],
+  "actual_runner_calls": 10,
+  "repair_redispatches": 0,
+  "live_probes": 0,
+  "notes": "Index of retrievable current raw native receipts; complete usage/wall/diagnostics remain unchanged in referenced artifacts. No normalization/billing/efficiency inference."
+}
