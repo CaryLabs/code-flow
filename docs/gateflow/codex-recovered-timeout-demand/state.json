@@ -1,0 +1,332 @@
+{
+  "work_unit": "codex-recovered-timeout-demand",
+  "current_gate": "completed",
+  "next_entry_point": "user manual merge of draft59; caller separate business acceptance of Developer/Judge",
+  "goal_confirmation": "passed-user-confirmed",
+  "history": [
+    {
+      "gate": "plan",
+      "decision": "artifact ready for independent review",
+      "artifact": "docs/gateflow/codex-recovered-timeout-demand/plan.md",
+      "sha256": "0586f7d9528e7114efdad0b05680e6c0b48f63b56eff6db058b43361c2f40f04",
+      "validation": "plan-run.json: actual managed/native/runner exit0, final artifact checked; two recovered exploration tool anomalies do not invalidate plan facts"
+    },
+    {
+      "gate": "plan review",
+      "decision": "ds artifact available; mimo initial attempt invalid as review evidence (upstream content_filter, no artifact); same-provider single corrective retry in flight",
+      "evidence": [
+        "evidence/plan-review-mimo-run.json",
+        "evidence/plan-review-ds-run.json"
+      ],
+      "findings": "no controller adjudication/pass until both required artifacts"
+    },
+    {
+      "gate": "goal confirmation",
+      "revision": "v2",
+      "decision": "user explicitly replaced v1 goal and confirmed terminal-driven both-runtime contract",
+      "artifact": "docs/gateflow/codex-recovered-timeout-demand/goal-confirmation-v2.md",
+      "superseded": "v1 plan/reviews cannot pass new goal",
+      "old_reviewer_handle": 15652
+    },
+    {
+      "gate": "plan review",
+      "revision": "v1 historical",
+      "decision": "both historical reviews completed; v1 superseded by user before acceptance; no v2 pass inferred",
+      "artifacts": [
+        "docs/reviews/plan-review-20261013-130943.md",
+        "docs/reviews/plan-review-20261013-131652.md"
+      ],
+      "mimo_attempts": "initial content_filter plus one completed corrective retry",
+      "next": "plan v2"
+    },
+    {
+      "gate": "plan",
+      "revision": "v2",
+      "decision": "artifact ready; managed/native/runner exit0, two exploration anomalies do not invalidate plan; independent review pending",
+      "artifact": "docs/gateflow/codex-recovered-timeout-demand/plan-v2.md",
+      "sha256": "a674f5ff78efd35a4d71e68d6a32b5055ee553ec4fee1bf2cb097f339d6fbefd",
+      "evidence": "evidence/plan-v2-run.json"
+    },
+    {
+      "gate": "plan review",
+      "revision": "v2",
+      "decision": "fix required",
+      "artifact": "docs/gateflow/codex-recovered-timeout-demand/plan-v2-review-decision.md",
+      "accepted_findings": [
+        "DS-F1",
+        "DS-F2",
+        "C1",
+        "OQ1/OQ3/agent-status clarifications"
+      ],
+      "fix_status": "未修复"
+    },
+    {
+      "gate": "fix",
+      "revision": "v2 plan",
+      "decision": "plan artifact fixed and native0; old collector false rejection managed1 independently diagnosed, see native proof; review not yet passed",
+      "artifact": "docs/gateflow/codex-recovered-timeout-demand/plan-v2-fix.md",
+      "supplement": "evidence/plan-v2-fix-native-proof.json",
+      "source_plan_sha256": "13748c8ceb3e84dfd6ee3764ad7dfb534d3221d1401f15a11a09654412c039f4",
+      "fixed_plan_artifact": "docs/gateflow/codex-recovered-timeout-demand/plan-v2.md",
+      "artifact_sha256": "b8d12ba1bd7798fc171b53e46f4c17c5f98254fab39cbba1223857d44f3d6067"
+    },
+    {
+      "gate": "re-review",
+      "revision": "v2 plan",
+      "decision": "pass; all accepted plan fixes 已修复",
+      "artifact": "docs/gateflow/codex-recovered-timeout-demand/plan-v2-rereview-decision.md",
+      "source_plan_sha256": "13748c8ceb3e84dfd6ee3764ad7dfb534d3221d1401f15a11a09654412c039f4"
+    },
+    {
+      "gate": "accepted plan commit",
+      "commit": "b5a8095a2f2c8f72596f4a393ad5c70e85ca48ca",
+      "decision": "passed checkpoint; production sources unchanged",
+      "next": "implementation"
+    },
+    {
+      "gate": "implementation",
+      "slice": "S-1",
+      "decision": "delegated implementation ready; managed/native/runner exit0; 56 unit and 10 synthetic cases passed; native kernel tests environment-blocked and require controller run",
+      "artifact": "docs/gateflow/codex-recovered-timeout-demand/implementation.md",
+      "collector_sha256": "9b44ac33099f49e8d4904e561e63f4e5dee43a6e177548cbb2edb5226f35ce5b"
+    },
+    {
+      "gate": "code review",
+      "decision": "controller original replay passed; outer opt-in native suite 2/2 passed, nested sandbox blocker resolved; independent dual review in flight",
+      "validation": [
+        "evidence/original-replay-repository.json",
+        "evidence/controller-native/summary.json"
+      ],
+      "collector_sha256": "9b44ac33099f49e8d4904e561e63f4e5dee43a6e177548cbb2edb5226f35ce5b"
+    },
+    {
+      "gate": "code review",
+      "provider": "ds-flash",
+      "decision": "artifact available, controller dual adjudication pending",
+      "artifact": "docs/reviews/code-review-20261013-161334.md",
+      "actual_managed_exit": 0,
+      "runner_evidence": "evidence/code-review-ds-run.json"
+    },
+    {
+      "gate": "code review",
+      "provider": "ds-flash",
+      "clarification": "Nonblocking state traceability question resolved: fixed plan hash now source_plan_sha256; fix report has separate artifact_sha256. No source/contract change."
+    },
+    {
+      "gate": "code review",
+      "slice": "S-1",
+      "decision": "pass; no material findings/required fixes",
+      "artifact": "docs/gateflow/codex-recovered-timeout-demand/code-review-decision.md",
+      "reviews": [
+        "docs/reviews/code-review-20261013-162821.md",
+        "docs/reviews/code-review-20261013-161334.md"
+      ],
+      "collector_sha256": "9b44ac33099f49e8d4904e561e63f4e5dee43a6e177548cbb2edb5226f35ce5b",
+      "supplemental_replay": "evidence/judge-replay-repository.json"
+    },
+    {
+      "gate": "accepted slice commit",
+      "slice": "S-1",
+      "commit": "edd3d7bc937752d4ecab1e63cc6ba8599f17dac3",
+      "decision": "pass checkpoint; 5 delivered source hashes unchanged"
+    },
+    {
+      "gate": "aggregate deepreview",
+      "provider": "ds-flash",
+      "decision": "artifact available; DS-A1 accepted, 未修复; await original mimo review before source fix",
+      "artifact": "docs/reviews/code-review-20261013-164206.md",
+      "actual_managed_exit": 0,
+      "runner_evidence": "evidence/aggregate-ds-run.json"
+    },
+    {
+      "gate": "aggregate deepreview",
+      "decision": "fix required; DS-A1 accepted 未修复; both reviews actual exit0",
+      "artifact": "docs/gateflow/codex-recovered-timeout-demand/aggregate-review-decision.md",
+      "reviews": [
+        "docs/reviews/code-review-20261013-164206.md",
+        "docs/reviews/code-review-20261013-164409.md"
+      ]
+    },
+    {
+      "gate": "fix",
+      "revision": "aggregate DS-A1",
+      "decision": "implementation 已修复; current-version mandatory56 suite, native2, both original replays pass; independent re-review pending",
+      "artifact": "docs/gateflow/codex-recovered-timeout-demand/aggregate-fix.md",
+      "collector_sha256": "aa9b1a3eef7f048e6d8e8a06e06510da9178fcba9097270d422cf2eafc2dd7ff"
+    },
+    {
+      "gate": "re-review",
+      "revision": "aggregate DS-A1",
+      "provider": "ds-flash",
+      "decision": "artifact available, DS-A1 已修复; dual controller adjudication pending",
+      "artifact": "docs/reviews/code-review-20261013-170322.md",
+      "actual_managed_exit": 0,
+      "runner_evidence": "evidence/aggregate-rereview-ds-run.json"
+    },
+    {
+      "gate": "re-review",
+      "revision": "aggregate DS-A1",
+      "decision": "pass; DS-A1 已修复, dual actual exit0; no new findings",
+      "artifact": "docs/gateflow/codex-recovered-timeout-demand/aggregate-review-decision.md",
+      "reviews": [
+        "docs/reviews/code-review-20261013-170322.md",
+        "docs/reviews/code-review-20261013-171623.md"
+      ],
+      "collector_sha256": "aa9b1a3eef7f048e6d8e8a06e06510da9178fcba9097270d422cf2eafc2dd7ff"
+    },
+    {
+      "gate": "accepted deepreview commit",
+      "commit": "1bd8246a0135958816be3cd4441b59e458af7af6",
+      "decision": "reviewed source checkpoint; full staged whitespace check on raw evidence needed packaging correction before ready/push, not waived",
+      "artifact": "docs/gateflow/codex-recovered-timeout-demand/artifact-packaging.md"
+    },
+    {
+      "gate": "ready-to-open-draft-PR",
+      "decision": "pass; full branch whitespace check0 after byte-faithful evidence packaging; source unchanged, intended commits only",
+      "artifact": "evidence/pr-ready-current.json",
+      "head": "2f0db8fb5fdfca02d90a69503b943aee348a81a0"
+    },
+    {
+      "gate": "push",
+      "decision": "actual exit0; origin work branch created/upstream set, main unchanged",
+      "head": "2f0db8fb5fdfca02d90a69503b943aee348a81a0"
+    },
+    {
+      "gate": "create draft PR",
+      "decision": "actual exit0; new draft59 created, actual PR review required",
+      "url": "https://github.com/noho/code-is-cheap/pull/59",
+      "head": "2f0db8fb5fdfca02d90a69503b943aee348a81a0"
+    },
+    {
+      "gate": "PR review",
+      "decision": "controller exact GitHub compare content/file/range match; label-only render delta explained; actual dual reviews in flight",
+      "snapshot": "evidence/pr-controller-verified/snapshot.json",
+      "head": "2f0db8fb5fdfca02d90a69503b943aee348a81a0",
+      "body": "updated to current56+7+14 validation before review launch",
+      "checks": "gh reports no PR checks; no remote CI pass claimed; actual local mandatory current-version checks green"
+    },
+    {
+      "gate": "PR review",
+      "provider": "ds-flash",
+      "decision": "artifact available; DS-PR1 accepted 未修复 (introduced empty root assistant display guard regression); await original mimo exit before source fix",
+      "artifact": "docs/reviews/pr-59-review-20261013-173833.md",
+      "actual_managed_exit": 0,
+      "runner_evidence": "evidence/pr-review-ds-run.json"
+    },
+    {
+      "gate": "PR review",
+      "decision": "fix required; DS-PR1 accepted 未修复; both original routes actual exit0",
+      "artifact": "docs/gateflow/codex-recovered-timeout-demand/pr-review-decision.md",
+      "reviews": [
+        "docs/reviews/pr-59-review-20261013-173833.md",
+        "docs/reviews/pr-59-review-20261013-175536.md"
+      ],
+      "reviewed_head": "2f0db8fb5fdfca02d90a69503b943aee348a81a0"
+    },
+    {
+      "gate": "fix",
+      "revision": "PR DS-PR1",
+      "decision": "local implementation 已修复; current57+11+62 checks/native2/both originals pass; actual PR re-review pending",
+      "artifact": "docs/gateflow/codex-recovered-timeout-demand/pr-fix.md",
+      "collector_sha256": "406ec8697cd516f335d3334b8a554353c9cc587d5e60428c4b9ba21e5817891d"
+    },
+    {
+      "gate": "fix",
+      "revision": "PR DS-PR1",
+      "decision": "fix commit/source current406ec869; push actual0 to same draft59, required actual versioned re-review pending",
+      "commit": "aa7bcb747f41bba1ee1504005df5f938e8571aba"
+    },
+    {
+      "gate": "re-review",
+      "revision": "PR DS-PR1",
+      "decision": "actual versioned dual PR re-review in flight; controller exact compare173 files stable and complete",
+      "snapshot": "evidence/pr-controller-ds-pr1/snapshot.json",
+      "head": "aa7bcb747f41bba1ee1504005df5f938e8571aba"
+    },
+    {
+      "gate": "re-review",
+      "revision": "PR DS-PR1",
+      "provider": "ds-flash",
+      "decision": "artifact available, DS-PR1 已修复; actual exit0, dual adjudication pending",
+      "artifact": "docs/reviews/pr-59-review-20261013-182754.md",
+      "reviewed_head": "aa7bcb747f41bba1ee1504005df5f938e8571aba",
+      "runner_evidence": "evidence/pr-rereview-ds-run.json"
+    },
+    {
+      "gate": "re-review",
+      "revision": "PR DS-PR1",
+      "decision": "pass; DS-PR1 已修复, both actual exit0, source reviewed at aa7bcb7",
+      "artifact": "docs/gateflow/codex-recovered-timeout-demand/pr-review-decision.md",
+      "reviews": [
+        "docs/reviews/pr-59-review-20261013-182754.md",
+        "docs/reviews/pr-59-review-20261013-184446.md"
+      ],
+      "reviewed_head": "aa7bcb747f41bba1ee1504005df5f938e8571aba"
+    },
+    {
+      "gate": "accepted PR review commit",
+      "commit": "0feb4498aaa624c9984c1e705f04e75d808bd2c3",
+      "decision": "checkpoint; independent reviewed source aa7bcb7, artifact-only delta/source equality checked",
+      "artifact": "evidence/pr-review-artifact-delta.json"
+    },
+    {
+      "gate": "push",
+      "decision": "actual exit0; accepted PR review checkpoint published",
+      "head": "0feb4498aaa624c9984c1e705f04e75d808bd2c3"
+    },
+    {
+      "gate": "draft-PR-pass",
+      "decision": "pass; all criteria met, actual stable current PR snapshot and artifact-only bridge verified",
+      "artifact": "docs/gateflow/codex-recovered-timeout-demand/draft-pr-pass.md"
+    },
+    {
+      "gate": "final closeout",
+      "decision": "authorized sync2 actual0; installed source equality verified, CLI versions0.162.1/2.1.296, both originals installed0/needs_review",
+      "sync": "evidence/live-sync/summary.json",
+      "replays": [
+        "evidence/original-replay-installed.json",
+        "evidence/judge-replay-installed.json"
+      ]
+    },
+    {
+      "gate": "final closeout",
+      "decision": "delivery validation pass: actual native/runner/managed0 both real probes, ordered3 tools and independent calculation verified",
+      "live_source_sha256": "406ec8697cd516f335d3334b8a554353c9cc587d5e60428c4b9ba21e5817891d",
+      "probe_audits": [
+        "evidence/live-probes/codex/controller-audit.json",
+        "evidence/live-probes/claude/controller-audit.json"
+      ],
+      "original_business_acceptance": "both pending caller; result_statusnot_assessed"
+    },
+    {
+      "gate": "final closeout",
+      "decision": "pass; substantive closeout/source/delivery/risks/PR/IssueN/A recorded, no merge",
+      "artifact": "docs/gateflow/codex-recovered-timeout-demand/final-closeout.md",
+      "installed_collector_sha256": "406ec8697cd516f335d3334b8a554353c9cc587d5e60428c4b9ba21e5817891d"
+    }
+  ],
+  "base_commit": "62c3b26adeb994e81043d7b1afbcd4c6eb8974ae",
+  "authorization": {
+    "goal": "explicitly confirmed",
+    "draft_pr": true,
+    "merge": false,
+    "sync_after_full_review": true,
+    "mimo_flash_codex_and_claude_probes": true
+  },
+  "goal_contract": "goal-confirmation-v2.md",
+  "inflight": [],
+  "accepted_plan_commit": "b5a8095a2f2c8f72596f4a393ad5c70e85ca48ca",
+  "accepted_slice_commit": "edd3d7bc937752d4ecab1e63cc6ba8599f17dac3",
+  "accepted_deepreview_commit": "1bd8246a0135958816be3cd4441b59e458af7af6",
+  "pr": {
+    "number": 59,
+    "url": "https://github.com/noho/code-is-cheap/pull/59",
+    "draft": true,
+    "merge_authorized": false,
+    "opened_head": "2f0db8fb5fdfca02d90a69503b943aee348a81a0",
+    "current_head": "aa7bcb747f41bba1ee1504005df5f938e8571aba"
+  },
+  "accepted_pr_review_commit": "0feb4498aaa624c9984c1e705f04e75d808bd2c3",
+  "delivery_status": "passed: installed406ec869, both original replays0needs_review, both mimo-flash3step probes0passed",
+  "work_unit_status": "completed"
+}

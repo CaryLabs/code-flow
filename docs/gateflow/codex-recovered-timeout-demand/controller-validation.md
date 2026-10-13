@@ -1,0 +1,25 @@
+# Controller validation for S-1
+
+Gate: code review. Native protocol/selected-check assertions are validated against the delivered source manifest; all saved source hashes remain equal. This supplements the delegated implementation report without rewriting its historical nested-sandbox failure.
+
+- Final affected unit suite: 56 passed, current collector/test hashes verified against `evidence/s1-implementation-20261013/source-manifest.json` and `unit-suite-final-source.log`.
+- Synthetic protocol samples: 10/10 outcomes passed, including rejection controls; retained commands and inputs under the same directory.
+- Controller outer opt-in native suite: actual exit 0, both Claude and Codex tests passed. Exact argv/environment/hash in `evidence/controller-native/summary.json`, raw stdout/stderr and separate native probe records. Native binaries ran under srt against deterministic localhost model responses and synthetic inputs. This resolves the delegation environment blocker; no real provider fault or business rerun is claimed.
+- Original controller-only deterministic replay against repository collector: exit 0, completed/needs_review/not_assessed; errors 0, anomalies 8, warnings 0. All five intermediate notices and original three anomalies retained. Final/session/usage/tool and selected-artifact results unchanged. Source hashes before/after identical. See `evidence/original-replay-repository.json`; no business output copied into repository or passed to delegates. V2 deliberately does not preserve V1 warnings categorization.
+- `./scripts/validate-skills.sh`: actual exit 0, all six repository skills valid, including changed sub-agents skill.
+
+Native/result acceptance is call completion only. Caller business validation remains unassessed. Installed replay and authorized mimo-flash Codex/Claude three-step real live probes remain pending until the full review/PR gate passes. Ordinary probes will verify actual tool I/O and computation, not claim network-fault reproduction.
+
+Residual coverage limits remain those in approved goal/plan: Codex native completed message has no independent refusal reason; preserve prose and caller ownership. Future protocol evolution and actual injected provider-fault tests belong to maintainer later work units if requested, not this slice. Current required validation has no unresolved environment blocker. Next entry: independent dual code-review adjudication.
+
+## Additional user-supplied Judge TLS replay
+
+Same approved goal; no source or acceptance change. `evidence/judge-replay-repository.json` records actual collector0/needs_review, errors0/anomalies10/warnings0, four unfamiliar TLS notices plus six prior anomalies retained, one success terminal line61/final60, unchanged final/statistics/canary/four regular artifacts/source hashes. Business acceptance remains pending for both Developer and Judge. First replay harness asserted byte-identical diagnostic display; native fallback error item now appears in a full event envelope. That assertion failure and first helper are retained separately. Revised assertion proves identical inner item and source location, not merely loose text matching; all checks now pass. `minimal-judge-tls-recovery.jsonl` contains only synthetic start/final plus four diagnostic texts, for independent review. No business Agent rerun or business files edited. Installed replay remains pending.
+
+## Current version after DS-A1 fix
+
+Collector SHA256 aa9b1a3eef7f048e6d8e8a06e06510da9178fcba9097270d422cf2eafc2dd7ff; tests 6cda405c565c9ebc200885bd61c1d8fe7e480b3562330afacd63e9ac38be891b. Delegate fix actual managed/native/runner0, final56 suite +7 focused methods +14 synthetic cases pass; exact validation.json and snapshots preserved in fix raw archive. Controller current-source native suite2 pass in controller-native-fixed, both current-source original replays0/needs_review in original-replay-repository-fixed.json and judge-replay-repository-fixed.json. All source/check/diagnostic/final/statistics assertions remain true; originals unchanged. Judge helper now explicitly guards no selected last-message postprocessing before using native0/precollection0. No business acceptance or live installation inferred. Packaging details: artifact-packaging.md.
+
+## Current PR DS-PR1 version
+
+Collector406ec8697cd516f335d3334b8a554353c9cc587d5e60428c4b9ba21e5817891d, tests a65efef0fa30fb631420fc8e786a825b1c31cfd67c555df66bd7af0c9b6678ea. Gpt-6-sol actual managed/native/runner0, recovered evidence-capture errors concern only controller-owned state drift; no source/test failure after fix. Current mandatory57 suite +11 affected methods +62 synthetic before/after cases green, proof/exit/tool/result_status unchanged, contract mismatches57->0. New controller-native-pr-fixed actualexit0,2 native tests OK. Both original-replay-repository-pr-fixed.json / judge-replay-repository-pr-fixed.json actual0needs_review, all assertions true, errors0/anomalies8 and10, original bytes unchanged. No caller business acceptance. New PR version and dual targeted re-review pending.
