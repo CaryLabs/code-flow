@@ -8,9 +8,9 @@ alwaysApply: true
 
 ## 流程真源
 
-仓库：`D:/Workspace/WorkBuddy/code-flow`（fork of `noho/code-is-cheap`）
+仓库：`{{CODE_FLOW_ROOT}}`（fork of `noho/code-is-cheap`）
 
-已安装到用户级 skill 目录 `C:/Users/carys/.workbuddy/skills/`，对所有项目自动可用：
+已安装到用户级 skill 目录 `~/.workbuddy/skills/`，对所有项目自动可用：
 
 | Skill | 职责 |
 | --- | --- |
@@ -33,7 +33,7 @@ alwaysApply: true
 新项目开工前先生成骨架，避免目录和真源文档临到用时才补：
 
 ```bash
-bash D:/Workspace/WorkBuddy/code-flow/scripts/init-code-flow.sh <project-dir> [project-name]
+bash {{CODE_FLOW_ROOT}}/scripts/init-code-flow.sh <project-dir> [project-name]
 ```
 
 会创建 `docs/{plans,reviews,closeouts,implementation,work-units}/`、设计真源 `docs/design.md`、总控真源 `docs/implementation-control.md` 和项目级 `AGENTS.md`。脚本幂等，只补缺失项，不覆盖已有文件。
@@ -65,7 +65,7 @@ bash D:/Workspace/WorkBuddy/code-flow/scripts/init-code-flow.sh <project-dir> [p
 本仓库是 skill 与本规则的唯一真源，用户级目录只是安装目标。更新流程：
 
 ```bash
-cd D:/Workspace/WorkBuddy/code-flow && git pull
+cd {{CODE_FLOW_ROOT}} && git pull
 bash scripts/install-workbuddy.sh
 ```
 
