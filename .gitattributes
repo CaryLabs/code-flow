@@ -1,0 +1,7 @@
+# 保持 shell 脚本为 LF，否则在 Windows checkout 后无法执行。
+*.sh text eol=lf
+
+# Markdown 与 YAML 保持 LF，避免 diff 噪声。
+*.md text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
