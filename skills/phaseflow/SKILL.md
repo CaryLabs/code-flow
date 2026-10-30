@@ -131,6 +131,23 @@ git status --short
 Agent/provider 选择与派发协议是两个独立决策。如果用户指定 Agent/provider，就按用户指定；未指定时由 phaseflow 按当前
 gate 选择合适 Agent。
 
+review 系 gate（适用 plan review、完整 code review）派发前，总控校验：review 所用 provider 的公司必须与 implementation
+所用 provider 的公司不同（交叉评审，避免自评审偏差）。provider → 公司归组如下：
+
+| 公司 | provider |
+| --- | --- |
+| DeepSeek | `deepseek`、`ds-flash` |
+| 智谱 Zhipu | `glm`、`glm-flash`、`glm_flash` |
+| 月之暗面 Moonshot | `kimi` |
+| 小米 MiMo | `mimo`、`mimo-fast`、`mimo-flash`、`mimo_fast`、`mimo_flash` |
+| 阿里 Alibaba | `qwen` |
+| 腾讯 Tencent | `hy` |
+| OpenAI | `gpt-6-astra`、`gpt-6-sol`、`gpt-6-luna` 及 `-x` / `-max` 档、`business` |
+| 本地 Local | `local`、`local_llama` |
+
+同一公司多档 provider（如 `glm` 与 `glm-flash`）视为同公司，不得互相评审。review provider 由用户在每个 review gate
+手动选择；用户未指定时列出与 implementation 不同公司的可选 provider。校验发现同公司则停下让用户改选，不得派发。
+
 派发协议按以下优先级确定：
 
 1. 用户显式要求 `$tmux-agents` / `/tmux-agents` 时，读取并遵循其协议，通过已有 pane 派发；

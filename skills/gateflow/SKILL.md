@@ -172,6 +172,7 @@ slice 是实现与验证单元，不自动产生独立审核或提交。按 acce
 
 所有 slices 完成后，对最终组合版本执行一轮完整 Deepreview：检查 correctness、整体目标覆盖与遗漏、契约/状态、
 边界/失败路径、验证有效性，以及多 slice 接口/状态/共享假设交互。完成适用的独立审核数量，保留要求的双路并行；
+reviewer 所用 provider 必须与 implementation 所用 provider 不同公司（公司归组见 phaseflow 的 provider → 公司归组表），避免自评审偏差。
 每位 reviewer 独立审查证据并形成实质判断，旧 pass 不能替代当前判断。适用计划审核也须满足其独立审核要求。
 
 review / re-review 必须 evidence-based，并产出 durable artifact。finding 必须能被裁决为：
