@@ -86,7 +86,17 @@ if [[ "$install_rules" == true ]]; then
   mkdir -p "$rules_dir"
   src_rule="$repo_root/scripts/code-flow-rule.md"
   if [[ -f "$src_rule" ]]; then
-    cp "$src_rule" "$rule_file"
+    # 把模板占位符替换为当前机器的仓库路径，规则模板本身不保存机器相关路径。
+    rule_root="$repo_root"
+    if command -v cygpath >/dev/null 2>&1; then
+      rule_root="$(cygpath -m "$repo_root")"
+    fi
+    escaped_rule_root="$(printf '%s' "$rule_root" | sed 's/[&|]/\\&/g')"
+    sed "s|{{CODE_FLOW_ROOT}}|$escaped_rule_root|g" "$src_rule" > "$rule_file"
+    if grep -Fq '{{CODE_FLOW_ROOT}}' "$rule_file" || ! grep -Fq "$rule_root" "$rule_file"; then
+      echo "    ✗ 规则渲染失败: 未正确写入当前仓库路径" >&2
+      exit 1
+    fi
     echo "==> ✓ 规则已安装: $rule_file"
   else
     echo "    ✗ 规则模板不存在: $src_rule" >&2
